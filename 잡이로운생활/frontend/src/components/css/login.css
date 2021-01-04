@@ -1,0 +1,250 @@
+.login-form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 3.5% auto;
+  background-color: #eff0f5;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 30px;
+  padding: 5px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.login-form-box .login-logo-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-form-box .login-logo-img img {
+  width: 150%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.login-form-box .login-logo-text {
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.login-button-box {
+  width: 230px;
+  margin: 35px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eff0f5;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-radius: 30px;
+}
+
+.login-toggle-btn {
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  transition: .5s;
+}
+
+#login-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #80c3ff;
+  box-shadow: inset 3px 3px 8px -1px rgba(0,0,0,0.4),
+            inset -3px -3px 8px -1px #ffffff;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.login-input-group {
+  position: absolute;
+  top: 280px;
+  width: 280px;
+  transition: .5s;
+}
+
+.login-input-field {
+  width: 94%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 6%;
+  margin: 5px 0;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px #ffffff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background: transparent;
+}
+
+.login-submit-btn {
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  /* background: linear-gradient(to right, #0075db, #a3d4ff); */
+  background-color: #eff0f5;
+  color: rgba(0,0,0,0.4);
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  text-align: center;
+  /* color: rgba(255,255,255,0.9); */
+}
+
+.on-login-btn {
+  background: linear-gradient(to right, #0075db, #a3d4ff);
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.on-login-btn:active {
+  opacity: 0.8;
+}
+
+#login {
+  left: 50px;
+}
+
+#signup {
+  left: 450px;
+}
+
+.sigup-sort-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.signup-email {
+  position: relative;
+}
+
+.signup-email span {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(0, -50%);
+  font-size: 12px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  padding: 5px 10px;
+  border-radius: 30px;
+  color: rgba(0,0,0,0.5);
+  transition: .5s;
+  cursor: pointer;
+}
+
+.signup-email span:hover {
+  background: #0088ff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.login-input-email {
+  width: 70%;
+  padding-right: 24%;
+}
+
+.signup-name {
+  width: 100%;
+  display: flex;
+}
+
+.login-input-last {
+  width: 70%;
+  margin-left: 10px;
+}
+
+.login-input-corp {
+  margin-left: 10px;
+}
+
+.login-input-group .signup-err-msg {
+  position: absolute;
+  top: -22px;
+  font-size: 12px;
+  margin-left: 5px;
+  color:tomato;
+  font-weight: 700;
+  transition: .5s ease;
+}
+
+.sigup-sort-box > label {
+  cursor: pointer;
+  margin-right: 30px;
+  font-size: 12px;
+  transition: all .3s ease-in-out;
+}
+
+.sigup-sort-box > input[type=radio] {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  margin-left: 25px;
+  border-radius: 20%;
+  transition: all .3s ease-in-out;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff,
+              inset 0 0 0 rgba(0,0,0,0.2),
+              inset 0 0 0 #ffffff;
+  cursor: pointer;
+}
+
+.sigup-sort-box > input[type=radio]:checked {
+  position: relative;
+  background-color: #0088ff;
+  box-shadow: 0 0 0 0 rgba(0,0,0,.2),
+              0 0 0 0 rgba(255,255,255,1),
+              inset 4px 4px 8px -1px rgba(0,0,0,0.2),
+              inset -2px -2px 8px -1px #ffffff;
+}
+
+.sigup-sort-box > input[type=radio]:focus {
+  outline: none !important;
+}
+
+.sigup-sort-box > input[type=radio]:checked::before {
+  content: "\f00c";
+  font-family: 'Font Awesome 5 Free';
+  font-size: 10px;
+  font-weight: 900;
+  margin: 0;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#individual-user:checked ~ .individual-user-label,
+#corporation-user:checked ~ .corporation-user-label {
+  color: #0088ff;
+}

@@ -1,0 +1,79 @@
+.single-date-picker__calendar-month-header[data-v-1179a6d7]{
+  padding:40px 30px 20px 30px;
+  display:-webkit-box;display:
+  -ms-flexbox;display:flex;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-between;
+  border-radius:10px 10px 0 0;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  color:#000
+}
+
+.single-date-picker__calendar-month-header .single-date-picker__year[data-v-1179a6d7]{
+  font-weight:900;
+  font-size:20px;
+  text-transform:capitalize
+}
+
+.single-date-picker__calendar-month-header .single-date-picker__arrow[data-v-1179a6d7]{cursor:pointer}
+
+.single-date-picker__calendar-week-header[data-v-187bfc22]{
+  margin:10px 0 5px 0;
+  color:rgba(0,0,0,0.5);
+  font-size: 14px;
+}
+
+.single-date-picker__date[data-v-7e5b706c]{
+  font-size:12px !important;
+  font-size:14px;
+  height:40px;
+  width:40px;
+  margin:0 auto;
+  line-height: 38px; 
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  cursor:default;
+  transition: .5s;
+  border-radius:50%;
+  border:2px solid transparent;
+}
+
+.single-date-picker__date.single-date-picker__selected[data-v-7e5b706c],.single-date-picker__date[data-v-7e5b706c]:hover{
+  border-color: #7dc2fd;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), 
+              inset -4px -4px 6px -1px #ffffff;
+}
+
+.single-date-picker__date.single-date-picker__today[data-v-7e5b706c]{
+  border-radius:50%;
+  background-color:#7dc2fd;
+  border-color: #eff0f5;
+  box-shadow: inset 5px 5px 6px -1px rgba(0,0,0,0.3),
+              inset -2px -2px 6px -1px #f1efef;
+}
+
+tr[data-v-12521860]{color:#614a52}.single-date-picker__calendar-month[data-v-21b19bdf]{
+  width:100%;
+  padding:10px;
+  padding-bottom:0;
+}
+
+#single-date-picker[data-v-61873592]{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-align:center;color:#2c3e50
+}
+
+.single-date-picker__calendar-view[data-v-61873592]{
+  max-width:100%;
+  border-radius:10px;
+  color:#0d1e44
+} 
+
+td {
+  vertical-align: middle !important;
+  height: 60px;
+}

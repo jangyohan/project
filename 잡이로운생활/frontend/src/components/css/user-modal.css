@@ -1,0 +1,307 @@
+.modal-enter-active, .modal-leave-active {
+  transition: opacity 0.4s;
+
+}
+
+.modal-leave-active {
+  transition: opacity 0.6s ease 0.4s;
+}
+
+.modal-enter, .modal-leave-to {
+  opacity: 0;
+
+}
+
+.user-modal-mask {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.user-modal-mask > div {
+  overflow: auto;
+  height: 100%;
+}
+
+.user-modal-mask .fa-times {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.8);
+  font-size: 25px;
+  transition: all .3s;
+}
+
+.user-modal-mask .fa-times:hover {
+  color: #0088ff;
+}
+
+.modal-enter .user-modal-wrap,
+.modal-leave-active .user-modal-wrap {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.user-modal-wrap {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  margin: 50px auto;
+  transition: 0.3s ease;
+  background-color: #eff0f5;
+  border-radius: 20px;
+  width: 800px;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+}
+
+.user-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 80px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+
+.user-modal-content .user-modal-header {
+  width: 100%;
+  display: flex;
+}
+
+.user-modal-header .user-modal-img-box {
+  width: 25%;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.user-modal-header .user-modal-img-box > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.user-modal-header .user-modal-text-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.user-modal-header .user-modal-text-box p:nth-child(1) {
+  font-size: 25px !important;
+  font-weight: 700;
+}
+
+.user-modal-content .user-modal-body {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.user-modal-body .user-modal-content-box {
+  margin-bottom: 50px;
+}
+
+.user-modal-body .user-modal-content-box > p {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'TmonMonsori';
+  margin-bottom: 10px;
+}
+
+.user-modal-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.user-modal-footer > div {
+  margin: 0 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+
+.user-modal-footer > div:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  font-weight: 700;
+}
+
+.user-modal-footer .user-modal-btn-on {
+  background-color: #0088ff;
+  color: #ffffff;
+}
+
+.user-modal-content-box .user-modal-data-content {
+  width: 94%;
+  margin-left: calc(6% - 35px);
+  padding: 10px 15px;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-modal-content-box .user-modal-data-content > p {
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+.user-modal-data-content .user-modal-license-certified-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.user-modal-data-content .user-modal-license-user-modal-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.user-modal-license-certified-list .user-modal-detail {
+  margin-right: 15px;
+  font-size: 11px;
+}
+
+.user-modal-license-certified-list .user-modal-detail-non-margin {
+  margin-right: 5px;
+}
+
+.user-modal-license-certified-list .user-modal-detail-career-text {
+  color: #0088ff;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-modal-license-certified-list .user-modal-type {
+  margin-right: 15px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-radius: 20px;
+}
+
+.user-modal-detail-career-text > div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  padding: 10px;
+  background-color: #eff0f5;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-radius: 20px;
+  cursor: auto;
+  color: rgba(0,0,0,0.7);
+  z-index: 100;
+}
+
+.user-modal-license-certified-list .user-modal-mark-box {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0088ff;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.user-modal-mark-box .fa-check-circle {
+  margin-right: 5px;
+}
+
+.user-modal-content-box .user-modal-self-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.user-modal-self-box .user-modal-self-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.user-modal-self-box .user-modal-self-area {
+  width: 94%;
+  padding: 15px 20px;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.user-modal-self-head > p:nth-child(1) {
+  font-size: 14px;
+}
+
+.user-modal-self-head > p:nth-child(2) {
+  font-size: 12px;
+  color: rgba(0,0,0,0.7);
+  margin-right: 15px;
+}
+
+.user-modal-self-box textarea {
+  resize: none;
+  width: 94%;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  border-radius: 20px;
+}
+
+.user-modal-self-box textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.user-modal-unlock {
+  filter: blur(3px);
+}

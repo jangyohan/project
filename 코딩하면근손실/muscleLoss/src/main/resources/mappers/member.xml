@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.muscleloss.mapper.MemberMapper">
+	
+	<select id="searchAll" resultType="member">
+		select *
+		from user
+	</select>
+
+ 	<select id="search" parameterType="String" resultType="member">
+		select *
+		from user
+		where uid=#{uid}
+	</select>
+
+	<select id="findPwd" parameterType="member" resultType="member">
+		select *
+		from user
+		where email = #{email}
+	</select> 
+	
+	<select id="login" parameterType="member" resultType="member">
+		select *
+		from user
+		where email = #{email}
+		and password = #{password}
+	</select>
+
+	 <insert id="signUp" parameterType="member">
+		insert into user (uid, email, password, interest1, interest2, interest3, avatarImage, imgtype, usercomment)
+		values (#{uid}, #{email}, #{password}, #{interest1}, #{interest2}, #{interest3}, #{avatarImage}, #{imgtype}, #{usercomment})
+	</insert>
+
+<!-- 
+	<update id="updateMem" parameterType="member">
+		update user
+		set
+		password = #{password}, interest1 = #{interest1}, interest2 = #{interest2}, interest3 = #{interest3}
+		where uid = #{uid}
+	</update>
+  -->
+  <update id="updateMemPw" parameterType="member">
+		update user
+		set password = #{password}
+		where email = #{email}
+	</update>
+	<update id="updateComment" parameterType="member">
+		update user
+		set usercomment = #{usercomment}
+		where email = #{email}
+	</update>
+	<update id="updateProfile" parameterType="member">
+		update user
+		set
+		avatarImage = #{avatarImage}, imgtype = #{imgtype}
+		where email = #{email}
+	</update>
+<!--
+	<delete id="deleteMem" parameterType="String">
+		delete from user
+		where uid = #{uid}
+	</delete> -->
+
+</mapper>
+
+
+
+
+
+
+
+
+

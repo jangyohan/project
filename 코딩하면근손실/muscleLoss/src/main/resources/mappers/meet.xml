@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.muscleloss.mapper.MeetMapper">
+
+	<select id="meetAll" resultType="meet">
+		select *
+		from meet
+	</select>
+	
+	<select id="meetAllByCategory" parameterType="meet" resultType="meet">
+		select *
+		from meet
+		where category = #{category}
+	</select>
+	
+	<select id="meetSearch" parameterType="meet" resultType="meet">
+		select *
+		from meet
+		where content
+		like CONCAT('%', #{content}, '%')
+	</select>
+	
+	 <insert id="meetregister" parameterType="meet">
+		insert into meet (uid_fk, title, content, category, meetdate, kakao, map) 
+		values (#{uid_fk}, #{title}, #{content}, #{category}, #{meetdate}, #{kakao}, #{map})
+	</insert>
+	
+	<update id="meetUpdate" parameterType="meet">
+		update meet
+		set title = #{title}, content = #{content}, category = #{category}, meetdate = #{meetdate}, kakao = #{kakao}, map = #{map} 
+		where uid_fk = #{uid_fk}
+	</update>
+	
+	<delete id="meetDelete" parameterType="String">
+		delete from meet
+		where meetNo = #{meetNo}
+	</delete>
+
+</mapper>

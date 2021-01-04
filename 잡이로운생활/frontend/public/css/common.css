@@ -1,0 +1,227 @@
+/* reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font: inherit; */
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* reset CSS end */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face { 
+  font-family: 'BMJUA'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'BBTreeTL';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeTL.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'GmarketSansBold'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'GmarketSansMedium'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); 
+  font-weight: normal; font-style: normal; 
+}
+@font-face { 
+  font-family: 'GmarketSansLight'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); 
+  font-weight: normal; font-style: normal; 
+}
+@font-face { 
+  font-family: 'TmonMonsori'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); 
+  font-weight:normal; 
+  font-style: normal; 
+}
+
+
+html {
+  height: 100%;
+  background-color: #eff0f5;
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+body {
+  height: 92%;
+  background-color: #eff0f5;
+}
+
+#app {
+  height: 100%;
+}
+
+.wrap {
+  transition: 0.3s ease;
+  margin: 0 auto;
+  margin-top: calc(30px + 3vh);
+  width: 1300px;
+  padding: 0 30px;
+}
+
+.wrap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.swal2-container {
+  z-index: 999999 !important;
+}
+
+.nav {
+  height: 8vh;
+  min-height: 30px;
+  background-color:#0088ff ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 6px 6px 20px -1px rgba(0,0,0,0.2),
+              -6px -6px 20px -1px #ffffff;
+  z-index: 5000;
+  display: flex;
+}
+
+.nav .logo-box {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 900;
+  font-size: calc(0.7vw + 10.5px);
+  letter-spacing: -1px;
+  cursor: pointer;
+  margin: 0 1vw 0 4vw;
+  color: white;
+  /* min-width: 110px; */
+}
+.nav .logo-img {
+  width: calc(3vw + 30px);
+}
+@media(max-height: 650px) {
+  .nav .logo-img {
+    width: calc(7vh + 30px);
+  }
+}
+
+.nav .menu-bar-box {
+  width: 43%;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  font-family: 'GmarketSansMedium';
+  
+}
+
+.nav .user-box {
+  width: 45%;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'GmarketSansMedium';
+}
+
+.menu-bar-box .menu-bar {
+  width: calc(3vw + 30px);
+  height: 60%;
+  /* background-color: cadetblue; */
+  margin: 0 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  border-radius: 20px;
+  color:white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.menu-bar-box .menu-bar:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.3),
+              inset -3px -3px 6px -1px rgba(255,255,255,0.6);
+  font-weight: 900;
+}
+
+.user-box .user-bar {
+  width: calc(3vw + 30px);
+  height: 60%;
+  /* background-color: cadetblue; */
+  margin-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.user-box .user-name-bar {
+  margin-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  color: white;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.user-box .user-bar:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.3),
+              inset -3px -3px 6px -1px rgba(255,255,255,0.6);
+  font-weight: 900;
+}

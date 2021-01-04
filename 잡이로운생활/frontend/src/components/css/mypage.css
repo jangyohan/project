@@ -1,0 +1,50 @@
+.profile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  margin: 5vh 0 3vh 0;
+  position: relative;
+}
+
+
+.profile-select {
+  background-color: grey;
+  color: whitesmoke !important ;
+}
+.profile-coin {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-my {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-video {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.name  {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

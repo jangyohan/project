@@ -1,0 +1,205 @@
+.modal-enter-active, .modal-leave-active {
+  transition: opacity 0.4s;
+
+}
+
+.modal-leave-active {
+  transition: opacity 0.6s ease 0.4s;
+}
+
+.modal-enter, .modal-leave-to {
+  opacity: 0;
+
+}
+
+.buy-search-modal-mask {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.buy-search-modal-mask .fa-times {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.8);
+  font-size: 25px;
+  transition: all .3s;
+}
+
+.buy-search-modal-mask .fa-times:hover {
+  color: #0088ff;
+}
+
+.modal-enter .buy-search-modal-wrapper,
+.modal-leave-active .buy-search-modal-wrapper {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.buy-search-modal-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1vh;
+  transition: 0.3s ease;
+  background-color: #eff0f5;
+  border-radius: 1vw;
+  width: 88%
+}
+
+@media (min-width: 450px) {
+  .buy-search-modal-wrap {
+  max-width: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  }
+}
+
+.buy-search-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+
+.buy-search-modal-content .buy-search-modal-header {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.buy-search-modal-content .buy-search-modal-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-search-modal-body .buy-search-valid-input {
+  width: 65%;
+  height: 40px;
+  padding-left: 6%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px #ffffff;
+  border: 0px solid rgba(0,0,0,0);
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 20px;
+  background: transparent;
+}
+
+.buy-search-modal-body .buy-submit-btn {
+  width: 25%;
+  height: 40px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.buy-search-modal-body .buy-submit-btn:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff !important;
+  background-color: #0088ff;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.buy-search-modal-content .buy-search-modal-footer {
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  border-radius: 20px;
+  height: 100px;
+  overflow: auto;
+}
+
+.buy-search-modal-footer .buy-search-list {
+  cursor: pointer;
+  color: rgba(0,0,0,0.7);
+  transition: all .4s;
+}
+
+.buy-search-modal-footer .buy-search-list:hover {
+  color: #0088ff;
+}
+
+.buy-modal-buy {
+  width: 100%;
+  color: grey;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: x-large;
+  font-weight: 800;
+  color: black;
+  margin-left: 10px;
+}
+
+.price-eth {
+  font-size: x-large;
+  font-weight: 800;
+  color: #0088ff;
+  margin-left: 10px;
+}
+
+.buyVideoActive {
+  background-color: #0088ff;
+  width: 120px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow .5s;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+}
+
+.buyVideoActive:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+}
+
+.buyVideoNoactive {
+  background-color: grey;
+  width: 120px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: #ffffff;
+}

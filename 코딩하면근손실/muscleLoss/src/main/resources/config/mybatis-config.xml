@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+
+<configuration>
+	<typeAliases>
+		<typeAlias alias="member" type="com.ssafy.muscleloss.model.Member" />
+		<typeAlias alias="feed" type="com.ssafy.muscleloss.model.Feed" />
+		<typeAlias alias="gallery" type="com.ssafy.muscleloss.model.Gallery" />
+		<typeAlias alias="reply" type="com.ssafy.muscleloss.model.Reply" />
+		<typeAlias alias="like" type="com.ssafy.muscleloss.model.Like" />
+		<typeAlias alias="alarm" type="com.ssafy.muscleloss.model.Alarm" />
+		<typeAlias alias="follow" type="com.ssafy.muscleloss.model.Follow" />
+		<typeAlias alias="share" type="com.ssafy.muscleloss.model.Share" />
+		<typeAlias alias="meet" type="com.ssafy.muscleloss.model.Meet" />
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="mappers/member.xml" />
+		<mapper resource="mappers/feed.xml" />
+		<mapper resource="mappers/gallery.xml" />
+		<mapper resource="mappers/reply.xml" />
+		<mapper resource="mappers/like.xml" />
+		<mapper resource="mappers/alarm.xml" />
+		<mapper resource="mappers/follow.xml" />
+		<mapper resource="mappers/share.xml" />
+		<mapper resource="mappers/meet.xml" />
+	</mappers>
+</configuration>

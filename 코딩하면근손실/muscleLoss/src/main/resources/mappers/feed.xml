@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.muscleloss.mapper.FeedMapper">
+	
+	<select id="feedAll" resultType="feed">
+		select *
+		from feed
+	</select>
+	<select id="feedAllByUser" parameterType="feed" resultType="feed">
+		select *
+		from feed 
+		where uid_fk = #{uid_fk}
+	</select>
+	<select id="feedTagSearch" parameterType="feed" resultType="feed">
+		select *
+		from feed
+		where title
+		like CONCAT('%', #{title}, '%')
+	</select>
+	<select id="getfeedimage" parameterType="feed" resultType="feed">
+		select *
+		from feed
+		where fileName = #{fileName}
+	</select>
+	 <insert id="feedregister" parameterType="feed">
+		insert into feed (uid_fk, userimage, title, content, fileName, imgtype) 
+		values (#{uid_fk}, #{userimage}, #{title}, #{content}, #{fileName}, #{imgtype})
+	</insert>
+	
+	<update id="feedUpate" parameterType="feed">
+		update feed
+		set title = #{title}, content = #{content}, fileName = #{fileName}, imgtype = #{imgtype}
+		where uid_fk = #{uid_fk}
+	</update>
+	
+	<delete id="feedDelete" parameterType="String">
+		delete from feed
+		where feedNo = #{feedNo}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+miner.start()
+eth.pendingTransactions
+miner.start()
+miner.stop()
+miner.start()

@@ -1,0 +1,150 @@
+.apply-wrap {
+  padding: 0 100px !important;
+  width: 1000px !important;
+}
+
+.apply-container {
+  position: relative;
+}
+
+.apply-container .apply-header {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.apply-header .apply-header-text-box {
+  display: flex;
+  align-items: center;
+}
+
+.apply-header .apply-header-text-box > span:nth-child(1) {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.apply-header .apply-header-text-box > span:nth-child(2) {
+  font-size: 15px;
+}
+
+.apply-header-toggle-box {
+  display: flex;
+}
+
+.apply-header-toggle-box .apply-toggle-btn {
+  width: 100px;
+  height: 30px;
+  position: relative;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: grey;
+}
+
+.apply-header-toggle-box .all-apply-btn {
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.apply-header-toggle-box .some-apply-btn {
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.on-apply-btn {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff !important;
+  background-color: #0088ff !important;
+  /* filter: sepia(80); */
+  color: #ffffff !important;
+}
+
+.apply-container .apply-body {
+  margin-top: 10px;
+  width: 100%;
+  max-height: 450px;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  border-radius: 20px;
+  overflow: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apply-container .apply-body::-webkit-scrollbar { width: 15px;}
+/* 스크롤바의 width */
+::-webkit-scrollbar-track { background-color: #ffffff; }
+/* 스크롤바의 전체 배경색 */
+::-webkit-scrollbar-thumb { background: silver;}
+/* 스크롤바 색 */
+::-webkit-scrollbar-button { display: none; }
+/* 스크롤바 버튼 */
+
+.apply-body > p {
+  font-size: 12px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.applicant-card {
+  width: calc(30% - 24px);
+  height: 100px;
+  margin: 10px 13px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+              -6px -6px 10px -1px #ffffff;
+  border-radius: 20px;
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.applicant-card:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0),
+              0 0 0 0 rgba(0,0,0,0),
+              inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -3px -3px 4px -1px #ffffff;
+  background-color: #ececf0;
+}
+
+.applicant-card .applicant-img-box {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.applicant-card .applicant-img-box > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.applicant-card .applicant-text-box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.applicant-card .applicant-text-box > p {
+  font-size: 12px;
+}
+
+.applicant-card .applicant-text-box > p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
